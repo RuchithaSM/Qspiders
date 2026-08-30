@@ -1,0 +1,12 @@
+{
+  "transaction_search_terms": [
+    "payment",
+    "transfer",
+    "deposit"
+  ],
+  "boundary_amounts": [
+    0,
+    1,
+    9999.99
+  ]
+}

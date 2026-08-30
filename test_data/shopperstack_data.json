@@ -1,0 +1,12 @@
+{
+  "valid_searches": [
+    "Laptop",
+    "Headphones",
+    "Smartphone"
+  ],
+  "invalid_searches": [
+    "",
+    "   ",
+    "nonexistent-product-xyz"
+  ]
+}
