@@ -1,20 +1,40 @@
-<p align="center">
-  <img src="assets/freshbus-logo.png" alt="Fresh Bus Logo" width="180"/>
-</p>
+<div align="center">
 
-<h1 align="center">Fresh Bus – Selenium Pytest Automation Framework</h1>
+<img src="assets/freshbus-logo.png" alt="Fresh Bus Logo" width="180"/>
 
-<p align="center">
-  Web Application QA & Test Automation Project
-</p>
+# Fresh Bus – Selenium Pytest Automation Framework
 
-<p align="center">
-  <b>Python • Selenium • Pytest • Page Object Model • Jenkins</b>
-</p>
+**Web Application QA & Test Automation Project**
+
+`Python` · `Selenium` · `Pytest` · `Page Object Model` · `Jenkins`
+
+[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Selenium](https://img.shields.io/badge/Selenium-WebDriver-43B02A?style=for-the-badge&logo=selenium&logoColor=white)](https://www.selenium.dev/)
+[![Pytest](https://img.shields.io/badge/Pytest-Test%20Framework-0A9EDC?style=for-the-badge)](https://pytest.org/)
+[![Jenkins](https://img.shields.io/badge/Jenkins-CI%2FCD-D24939?style=for-the-badge&logo=jenkins&logoColor=white)](https://www.jenkins.io/)
+
+</div>
+
+> **Portfolio Note**
+> This repository is a sanitized representation of a real-world QA automation project. Proprietary source code, credentials, internal environments, production data, and restricted project assets are intentionally excluded.
 
 ---
 
-## 📌 Project Overview
+## 🧭 Quick Navigation
+
+| Section | Section |
+|---|---|
+| [📌 Project Overview](#-project-overview) | [👨‍💻 My Role](#-my-role) |
+| [🛠️ Technology Stack](#️-technology-stack) | [🏗️ Framework Architecture](#️-framework-architecture) |
+| [📂 Project Structure](#-project-structure) | [⚙️ Setup & Installation](#️-prerequisites) |
+| [🧪 Automation Examples](#-webdriver-setup) | [📋 Test Scenarios](#-representative-test-scenarios) |
+| [📊 Reporting](#-html-reporting) | [🔄 CI/CD](#-cicd-integration) |
+| [🐞 Defect Management](#-defect-management) | [🔐 Security & Confidentiality](#-security--confidentiality) |
+| [📈 Outcomes](#-project-outcomes) | [👤 Author](#-author) |
+
+---
+
+### 📌 Project Overview
 
 This repository contains a **sanitized version of the Selenium + Pytest automation framework** developed for testing the Fresh Bus web application.
 
@@ -28,7 +48,7 @@ I worked as a **QA Trainee** in a 15-member project team, including one team lea
 
 ---
 
-# 👨‍💻 My Role
+## 👨‍💻 My Role
 
 ### QA Trainee
 
@@ -56,7 +76,7 @@ I worked as a **QA Trainee** in a 15-member project team, including one team lea
 
 ---
 
-# 🛠️ Technology Stack
+## 🛠️ Technology Stack
 
 | Technology | Purpose |
 |---|---|
@@ -76,7 +96,7 @@ I worked as a **QA Trainee** in a 15-member project team, including one team lea
 
 ---
 
-# 🏗️ Framework Architecture
+## 🏗️ Framework Architecture
 
 The framework follows a **Page Object Model (POM)** architecture.
 
@@ -124,7 +144,7 @@ Test Cases
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```text
 freshbus-automation/
@@ -169,7 +189,7 @@ freshbus-automation/
 
 ---
 
-# 🔄 Test Automation Flow
+## 🔄 Test Automation Flow
 
 ```text
 Requirement Analysis
@@ -203,7 +223,7 @@ Release Validation
 
 ---
 
-# ⚙️ Prerequisites
+## ⚙️ Prerequisites
 
 The following software is required:
 
@@ -233,9 +253,9 @@ git --version
 
 ---
 
-# 📥 Installation
+## 📥 Installation
 
-## 1. Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone <repository-url>
@@ -249,7 +269,7 @@ cd freshbus-automation
 
 ---
 
-## 2. Create a Virtual Environment
+### 2. Create a Virtual Environment
 
 ### Windows
 
@@ -267,7 +287,7 @@ source venv/bin/activate
 
 ---
 
-## 3. Install Dependencies
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -286,7 +306,7 @@ requests
 
 ---
 
-# 🌐 Application Configuration
+## 🌐 Application Configuration
 
 Example `config.ini`:
 
@@ -313,7 +333,7 @@ must not be stored in the repository.
 
 ---
 
-# 🧪 Pytest Configuration
+## 🧪 Pytest Configuration
 
 Example `pytest.ini`:
 
@@ -333,7 +353,7 @@ addopts =
 
 ---
 
-# 🌐 WebDriver Setup
+## 🌐 WebDriver Setup
 
 The framework uses Selenium WebDriver with WebDriver Manager.
 
@@ -378,7 +398,7 @@ The fixture:
 
 ---
 
-# 🧱 Base Page
+## 🧱 Base Page
 
 Common Selenium operations are centralized inside the Base Page.
 
@@ -443,7 +463,7 @@ The purpose of the Base Page is to avoid repeating common Selenium operations ac
 
 ---
 
-# 🏠 Home Page Object
+## 🏠 Home Page Object
 
 `pages/home_page.py`
 
@@ -495,7 +515,7 @@ class HomePage(BasePage):
 
 ---
 
-# 🧪 Sample Test Case – Home Page
+## 🧪 Sample Test Case – Home Page
 
 `tests/test_home_page.py`
 
@@ -524,7 +544,7 @@ The test verifies that:
 
 ---
 
-# 🧪 Sample Test Case – Search Fields
+## 🧪 Sample Test Case – Search Fields
 
 ```python
 import pytest
@@ -556,7 +576,7 @@ def test_search_fields_are_available(driver):
 
 ---
 
-# 🧪 Sample Test Case – Bus Search
+## 🧪 Sample Test Case – Bus Search
 
 ```python
 import pytest
@@ -591,7 +611,7 @@ def test_bus_search(driver):
 
 ---
 
-# 🧪 Negative Testing
+## 🧪 Negative Testing
 
 Negative scenarios were also included as part of the testing strategy.
 
@@ -639,7 +659,7 @@ def test_search_without_destination(driver):
 
 ---
 
-# 🔁 Data-Driven Testing
+## 🔁 Data-Driven Testing
 
 Pytest parameterization can be used to execute the same workflow against multiple routes.
 
@@ -682,7 +702,7 @@ This approach reduces duplicated test code and makes it easier to extend route c
 
 ---
 
-# 📋 Representative Test Scenarios
+## 📋 Representative Test Scenarios
 
 | Test ID | Test Scenario | Type |
 |---|---|---|
@@ -707,7 +727,7 @@ This approach reduces duplicated test code and makes it easier to extend route c
 
 ---
 
-# 📸 Screenshot Capture
+## 📸 Screenshot Capture
 
 Screenshots can be captured automatically when a test fails.
 
@@ -757,7 +777,7 @@ This provides visual evidence when an automation scenario fails.
 
 ---
 
-# 📊 HTML Reporting
+## 📊 HTML Reporting
 
 The framework can generate HTML execution reports using `pytest-html`.
 
@@ -786,7 +806,7 @@ reports/
 
 ---
 
-# ⚡ Parallel Test Execution
+## ⚡ Parallel Test Execution
 
 For larger regression suites, tests can be distributed across multiple workers using `pytest-xdist`.
 
@@ -798,7 +818,7 @@ This allows multiple independent tests to execute concurrently and can reduce ov
 
 ---
 
-# 🏷️ Test Markers
+## 🏷️ Test Markers
 
 Tests can be grouped using Pytest markers.
 
@@ -828,45 +848,45 @@ pytest
 
 ---
 
-# ▶️ Running the Framework
+## ▶️ Running the Framework
 
-## Run the complete suite
+### Run the complete suite
 
 ```bash
 pytest
 ```
 
-## Verbose execution
+### Verbose execution
 
 ```bash
 pytest -v
 ```
 
-## Run a specific test file
+### Run a specific test file
 
 ```bash
 pytest tests/test_bus_search.py -v
 ```
 
-## Run a specific test
+### Run a specific test
 
 ```bash
 pytest tests/test_bus_search.py::test_bus_search -v
 ```
 
-## Run smoke tests
+### Run smoke tests
 
 ```bash
 pytest -m smoke
 ```
 
-## Run regression tests
+### Run regression tests
 
 ```bash
 pytest -m regression
 ```
 
-## Run with HTML report
+### Run with HTML report
 
 ```bash
 pytest \
@@ -876,7 +896,7 @@ pytest \
 
 ---
 
-# 🔄 CI/CD Integration
+## 🔄 CI/CD Integration
 
 The automation framework was designed to support Jenkins-based execution.
 
@@ -919,7 +939,7 @@ The production Jenkins configuration and internal CI environment are not include
 
 ---
 
-# 🗄️ UI & Backend Validation
+## 🗄️ UI & Backend Validation
 
 For selected workflows, application data was validated beyond the UI layer.
 
@@ -964,7 +984,7 @@ are intentionally excluded.
 
 ---
 
-# 🐞 Defect Management
+## 🐞 Defect Management
 
 Defects identified during testing were documented and tracked through the complete defect lifecycle.
 
@@ -1004,7 +1024,7 @@ Defect reports included information such as:
 
 ---
 
-# 🧩 Example Defect
+## 🧩 Example Defect
 
 ```text
 Defect ID: FB-XXX
@@ -1041,7 +1061,7 @@ Retested after fix
 
 ---
 
-# 🔐 Security & Confidentiality
+## 🔐 Security & Confidentiality
 
 This repository intentionally contains only a **sanitized representation** of the original framework.
 
@@ -1090,7 +1110,7 @@ secrets/
 
 ---
 
-# 📈 Project Outcomes
+## 📈 Project Outcomes
 
 The Fresh Bus project provided hands-on experience with:
 
@@ -1115,7 +1135,7 @@ During the project, I also identified and tracked **50+ defects** and identified
 
 ---
 
-# 🎯 Key Learning
+## 🎯 Key Learning
 
 The project provided practical experience in designing an automation framework rather than only writing individual Selenium scripts.
 
@@ -1143,7 +1163,7 @@ The focus was on making the automation suite **reusable, maintainable, scalable,
 
 ---
 
-# 🌐 Application
+## 🌐 Application
 
 Fresh Bus:
 
@@ -1151,7 +1171,7 @@ https://www.freshbus.com/
 
 ---
 
-# 📌 Disclaimer
+## 📌 Disclaimer
 
 This repository is intended for **portfolio and educational demonstration purposes**.
 
@@ -1161,7 +1181,7 @@ The sample code and test scenarios in this repository demonstrate the **framewor
 
 ---
 
-## 👤 Author
+### 👤 Author
 
 **Ruchitha Shivappashetty Mallikarjuna**
 
